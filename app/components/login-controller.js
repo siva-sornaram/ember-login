@@ -7,10 +7,15 @@ export default class LoginControllerComponent extends Component {
 
   @service session;
 
+
     validate_user = () => {
       var uname = this.username;
       var pass = this.password;
-      var result;
+      var result = {
+        userId: 0,
+        userName: "",
+        isValidated: false
+      }
 
       console.log(uname, password);
 
@@ -36,8 +41,11 @@ export default class LoginControllerComponent extends Component {
         },
       });
 
-      this.session.setUserName(result.userName);
-      this.session.setIsValidated(result.isValidated);
+      this.session.setUserName(this.result.userName);
+      this.session.setIsValidated(this.result.isValidated);
+
+      console.log(this.session.getUserName());
+      console.log(this.session.getIsValidated());
 
     };
 
