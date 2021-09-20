@@ -23,12 +23,14 @@
     "test:ember": "ember test"
   },
   "devDependencies": {
+    "@ember/jquery": "^2.0.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.4.2",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
+    "ember-ajax": "^5.0.0",
     "ember-auto-import": "^1.11.3",
     "ember-cli": "~3.28.0",
     "ember-cli-app-version": "^5.0.0",
